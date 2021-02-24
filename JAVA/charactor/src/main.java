@@ -1,0 +1,26 @@
+
+public class main {
+
+	public static void main(String[] args) {
+		Charactor male = new Charactor();
+		male.setName("Jack");
+		male.setWeapon("µµ°r");
+		male.setEnergyValue(200);
+		System.out.println( male.getName() + "'s weapon : " + male.getWeapon() + ". Energy Value is = " + male.getEnergyValue() );
+		
+		Charactor female = new Charactor();
+		female.setName("Lily");
+		female.setWeapon("«C¶³");
+		female.setEnergyValue(300);
+		System.out.println( female.getName() + "'s weapon : " + female.getWeapon() + ". Energy Value is = " + female.getEnergyValue() );
+		
+		Charactor Combination = new Charactor();
+		Combination.setName( male.getName() + "_" + female.getName() );
+		Combination.setWeapon(male.getWeapon() + " add" + female.getWeapon() );
+		Combination.setEnergyValue(male.getEnergyValue()+female.getEnergyValue());
+		System.out.println( Combination.getName() + "'s weapon : " + Combination.getWeapon() + ". Energy Value is = " + Combination.getEnergyValue() );
+	}
+	
+    
+	
+}
